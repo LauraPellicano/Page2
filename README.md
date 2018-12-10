@@ -7,9 +7,13 @@
 <p>Click the button to see the counter increase.</p>
 <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 </body>
+
+
 <form action = "https://laurapellicano.github.io/Page2/" >
 <button type="reset" value="Reset">Reset</button>
 </form>
+
+
 <head>
 <script>
 function clickCounter() {
