@@ -6,6 +6,7 @@
 <div id="result"></div>
 <p>Click the button to see the counter increase.</p>
 <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+<button type="reset" value="Reset">Reset</button>
 </body>
 
 <head>
