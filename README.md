@@ -10,9 +10,7 @@
 </body>
 
 
-<form action = "https://laurapellicano.github.io/Page2/" >
-<button type="reset" value="Reset">Reset</button>
-</form>
+
 
 
 <head>
