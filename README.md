@@ -1,17 +1,4 @@
-# Page2
-
 <html>
-<body>
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
-<div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-</body>
-
-
-
-
-
 <head>
 <script>
 function clickCounter() {
@@ -26,11 +13,14 @@ document.getElementById("result").innerHTML = "You have clicked the button " + l
 document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 }
 }
-function reset() 
-if "reset" == clicked
-
 </script>
 </head>
+<body>
 
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+</body>
 </html>
-
