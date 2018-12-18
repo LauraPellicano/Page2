@@ -27,6 +27,9 @@ document.getElementById("result").innerHTML = "You have clicked the button " + l
 document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 }
 }
+function reset() 
+if "reset" == clicked
+
 </script>
 </head>
 
