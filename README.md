@@ -143,7 +143,28 @@ openDropdown.classList.remove('show');
     <th><label for="Number"></label>  Number:<br>
     <input type="text" name="Number"><br>
     <th><label for="Serve (In Play)"></label> Serve (In Play):<br>
-    <input type="text" name="Serve (In Play)"><br>
+    <input type="button" name="Serve (In Play)"><br>
+    function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+    localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+    }
+    </script>
+    </head>
+    <body>
+    
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+    <div id="result"></div>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
     <th><label for="Serve (Ace)"></label> Serve (Ace):<br>
     <input type="text" name="Serve (Ace)"><br>
     <th><label for="Serve (Error)"></label>Serve (Error):<br>
@@ -406,6 +427,7 @@ openDropdown.classList.remove('show');
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 function clickCounter() {
+if(typeof(Storage) !== "undefined") {
 if (localStorage.clickcount) {
 localStorage.clickcount = Number(localStorage.clickcount)+1;
 } else {
